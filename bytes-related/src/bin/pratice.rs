@@ -10,4 +10,6 @@ async fn main() {
     println!("len={} capacity={} {:?}", buf.len(), buf.capacity(), buf);
     println!("len={} capacity={} {:?}", other.len(), other.capacity(), other);
 
+    buf.put_slice(&b"1234567890"[0..=9]);
+    println!("len={} capacity={} {:?}", buf.len(), buf.capacity(), buf);
 }
